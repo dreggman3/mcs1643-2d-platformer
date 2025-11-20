@@ -8,5 +8,6 @@ public class StartButton : MonoBehaviour
     public void OnClick()
     {
         SceneManager.LoadScene("Level01");
+        GameManager.StartGame();
     }
 }
