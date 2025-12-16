@@ -54,10 +54,15 @@ public class GameManager : MonoBehaviour
 
     public static void StartGame()
     {
-        SceneManager.LoadScene("Level01");
+//        if (SceneManager.GetActiveScene().name != "Level01")
+//        {
+//            SceneManager.LoadScene("Level01");
+//        }
+
          Score = 0;
          Lives = LivesPerGame;
         _gameOver = false;
+        _paused = false;
     }
 
 
