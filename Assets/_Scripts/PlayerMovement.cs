@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
             vel.x -= deltaSpeed * Time.deltaTime;
             if (vel.x <  -1 * speed)
             {
-                vel.x = -1 * speed;
+                vel.x = 1 * speed;
             }
         }
 
