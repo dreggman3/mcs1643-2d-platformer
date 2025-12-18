@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +6,21 @@ public class Button : MonoBehaviour
 {
     public bool Triggered = false;
     public Mover TriggeredObject;
-    public Sprite PressedSprite; 
+    public Sprite PressedSprite;
+
+  
+    public AudioClip buttonClip;
+    private AudioSource audioSource;
+
+    void Start()
+    {
+    
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,7 +28,13 @@ public class Button : MonoBehaviour
         {
             TriggeredObject.Moving = true;
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = PressedSprite; 
+            spriteRenderer.sprite = PressedSprite;
+
+            if (buttonClip != null)
+            {
+                audioSource.PlayOneShot(buttonClip);
+            }
         }
     }
 }
+

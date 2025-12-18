@@ -3928,6 +3928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectiveCompleteSprite: {fileID: 1851480009, guid: 913b2e345fa3ef24eae4a10bc6c1e4e0, type: 3}
   LevelCompleteScreen: {fileID: 1507515214}
+  objectiveClip: {fileID: 8300000, guid: c8b6327c12977ab4a87d38af6183acd8, type: 3}
 --- !u!1 &1389139349
 GameObject:
   m_ObjectHideFlags: 0
@@ -5420,9 +5421,21 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3951204978401472561, guid: 91ce2c8301446534eb05d293930ecd22, type: 3}
+      propertyPath: jumpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ea1b40db5b06f564a8362995991ef85e, type: 3}
+    - target: {fileID: 3951204978401472561, guid: 91ce2c8301446534eb05d293930ecd22, type: 3}
       propertyPath: jumpForce
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3951204978401472561, guid: 91ce2c8301446534eb05d293930ecd22, type: 3}
+      propertyPath: gotHitClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8efad446363572f41930fe215c6cb188, type: 3}
+    - target: {fileID: 3951204978401472561, guid: 91ce2c8301446534eb05d293930ecd22, type: 3}
+      propertyPath: hitEnemyClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e8d1e46c8ae39884a82080fc5f47bae1, type: 3}
     - target: {fileID: 4861539059299561281, guid: 91ce2c8301446534eb05d293930ecd22, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.97
@@ -5528,6 +5541,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9041350824499082950, guid: 5255f865520678a4fbf1c4eb1339a0f2, type: 3}
+      propertyPath: buttonClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c74b6fcb3266d704cb0f5cd399e68221, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
